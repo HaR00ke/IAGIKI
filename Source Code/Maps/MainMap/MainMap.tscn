@@ -889,13 +889,13 @@ points = PoolVector2Array( 15.0851, 25.0571, 1.77953, 25.0571, 1.77953, 9.93408,
 3/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=35]
-extents = Vector2( 108.25, 316.75 )
+extents = Vector2( 144.625, 395.875 )
 
 [sub_resource type="RectangleShape2D" id=43]
 extents = Vector2( 60.4998, 173.199 )
 
 [sub_resource type="RectangleShape2D" id=36]
-extents = Vector2( 15.3125, 16 )
+extents = Vector2( 18.5625, 16 )
 
 [sub_resource type="RectangleShape2D" id=44]
 extents = Vector2( 72.9993, 172 )
@@ -942,7 +942,7 @@ position = Vector2( 676, 449 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Triggers/Library"]
 modulate = Color( 0.0509804, 0.145098, 0.658824, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
-position = Vector2( -118, 2 )
+position = Vector2( -38.8751, 38.3751 )
 rotation = 1.5708
 shape = SubResource( 35 )
 
@@ -963,8 +963,9 @@ scale = Vector2( 10, 10 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Triggers/Computer"]
 modulate = Color( 0.0509804, 0.145098, 0.658824, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
-position = Vector2( -11, -41.3125 )
+position = Vector2( -11, -38.0625 )
 rotation = 1.5708
+scale = Vector2( 1, 1 )
 shape = SubResource( 36 )
 
 [node name="LabTrigger" type="Area2D" parent="Triggers"]

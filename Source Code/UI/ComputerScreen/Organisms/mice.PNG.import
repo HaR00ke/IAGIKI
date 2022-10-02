@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mice.PNG-9ff1a1935f74564a2bf0bf0d4b3955ee.stex"
+path="res://.import/mice.png-74ef493647f4eee49980c51734ff6550.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/ComputerScreen/Organisms/mice.PNG"
-dest_files=[ "res://.import/mice.PNG-9ff1a1935f74564a2bf0bf0d4b3955ee.stex" ]
+source_file="res://UI/ComputerScreen/Organisms/mice.png"
+dest_files=[ "res://.import/mice.png-74ef493647f4eee49980c51734ff6550.stex" ]
 
 [params]
 
