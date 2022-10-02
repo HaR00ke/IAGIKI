@@ -1,0 +1,47 @@
+[gd_scene load_steps=10 format=2]
+
+[sub_resource type="Curve" id=1]
+min_value = -360.0
+max_value = 360.0
+_data = [ Vector2( 0.0657895, -260.182 ), 0.0, 0.0, 0, 0, Vector2( 0.953947, 360 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.984496 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0.00657894, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.251136 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+curve = SubResource( 5 )
+
+[sub_resource type="ParticlesMaterial" id=7]
+emission_shape = 1
+emission_sphere_radius = 5.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle_curve = SubResource( 2 )
+scale = 3.0
+scale_random = 0.14
+scale_curve = SubResource( 6 )
+color_ramp = SubResource( 4 )
+anim_speed_random = 1.0
+
+[sub_resource type="QuadMesh" id=8]
+
+[sub_resource type="MeshTexture" id=9]
+mesh = SubResource( 8 )
+
+[node name="FireParticles" type="Particles2D"]
+amount = 55
+randomness = 1.0
+process_material = SubResource( 7 )
+texture = SubResource( 9 )

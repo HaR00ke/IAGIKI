@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Launching.mp3-b9438efa2ab68bdeb50ca58ad857792b.mp3str"
+
+[deps]
+
+source_file="res://Maps/Rocket/Launching.mp3"
+dest_files=[ "res://.import/Launching.mp3-b9438efa2ab68bdeb50ca58ad857792b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

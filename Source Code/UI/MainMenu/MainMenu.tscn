@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/MainMenu.tres" type="Theme" id=1]
+[ext_resource path="res://UI/MainMenu/wallpaper.jpg" type="Texture" id=2]
+[ext_resource path="res://UI/MainMenu/MainMenu.gd" type="Script" id=3]
+[ext_resource path="res://UI/fff-forward.regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scenes/SnowParticle/SnowParticle.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+use_mipmaps = true
+extra_spacing_top = 20
+extra_spacing_bottom = 20
+extra_spacing_char = 2
+font_data = ExtResource( 4 )
+
+[sub_resource type="Environment" id=2]
+glow_enabled = true
+glow_bloom = 0.37
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_right = 1152.0
+margin_bottom = 108.0
+rect_scale = Vector2( 0.91, 0.91 )
+texture = ExtResource( 2 )
+
+[node name="SnowParticle" parent="." instance=ExtResource( 5 )]
+position = Vector2( -7, 105 )
+scale = Vector2( 0.549735, 0.346092 )
+
+[node name="SnowParticle2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1959, 21 )
+rotation = 1.83666
+scale = Vector2( 0.314819, 0.451433 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 689.0
+margin_top = 154.0
+margin_right = 1089.0
+margin_bottom = 332.0
+rect_scale = Vector2( 1.49546, 1.49546 )
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.278431, 0.352941, 0.411765, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "IAGIKI"
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -451.0
+margin_right = 250.0
+margin_bottom = 629.0
+custom_constants/separation = 30
+alignment = 1
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+margin_top = 305.0
+margin_right = 450.0
+margin_bottom = 400.0
+theme = ExtResource( 1 )
+disabled = true
+text = "Continue Game"
+
+[node name="playGameButton" type="Button" parent="VBoxContainer"]
+margin_top = 430.0
+margin_right = 450.0
+margin_bottom = 525.0
+theme = ExtResource( 1 )
+text = "New Game"
+
+[node name="settingsButton" type="Button" parent="VBoxContainer"]
+margin_top = 555.0
+margin_right = 450.0
+margin_bottom = 650.0
+theme = ExtResource( 1 )
+text = "Settings"
+
+[node name="quiButton" type="Button" parent="VBoxContainer"]
+margin_top = 680.0
+margin_right = 450.0
+margin_bottom = 775.0
+theme = ExtResource( 1 )
+text = "Quit"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+margin_left = 296.0
+margin_top = 351.0
+margin_right = 1588.0
+margin_bottom = 592.0
+theme = ExtResource( 1 )
+dialog_text = "Do you want to start a new game?"
+
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/playGameButton" to="." method="_on_playGameButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/settingsButton" to="." method="_on_settingsButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/quiButton" to="." method="_on_quiButton_pressed"]

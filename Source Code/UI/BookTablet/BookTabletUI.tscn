@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/BookTablet/BookTabletUI.gd" type="Script" id=1]
+[ext_resource path="res://UI/MainMenu.tres" type="Theme" id=2]
+[ext_resource path="res://UI/BookTablet/tablet.PNG" type="Texture" id=3]
+[ext_resource path="res://UI/ArialCE.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="BookTabletUI" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 312.0
+margin_top = 77.0
+margin_right = 352.0
+margin_bottom = 117.0
+rect_scale = Vector2( 31.6169, 23.1477 )
+size_flags_horizontal = 3
+color = Color( 0.513726, 0.552941, 0.54902, 0.788235 )
+
+[node name="Img" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -747.65
+margin_top = -561.35
+margin_right = 909.35
+margin_bottom = 681.65
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 771.0
+margin_top = 110.0
+margin_right = 1264.0
+margin_bottom = 226.0
+theme = ExtResource( 2 )
+text = "Online library"
+
+[node name="GoBack" type="Button" parent="."]
+margin_left = 360.0
+margin_top = 110.0
+margin_right = 660.0
+margin_bottom = 210.0
+theme = ExtResource( 2 )
+text = " Go Back "
+
+[node name="ScrollContainerTitles" type="ScrollContainer" parent="."]
+margin_left = 348.0
+margin_top = 240.0
+margin_right = 1548.0
+margin_bottom = 975.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainerTitles"]
+margin_right = 1200.0
+margin_bottom = 735.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 30
+custom_constants/margin_top = 20
+custom_constants/margin_left = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainerTitles/MarginContainer"]
+margin_left = 30.0
+margin_top = 20.0
+margin_right = 1170.0
+margin_bottom = 735.0
+size_flags_horizontal = 3
+custom_constants/separation = 50
+
+[node name="TextLabel" type="Label" parent="ScrollContainerTitles/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 1140.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 1 )
+text = "dsadsdasdsdsadsads"
+autowrap = true
+
+[connection signal="pressed" from="GoBack" to="." method="_on_GoBack_pressed"]

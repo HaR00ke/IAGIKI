@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/MainMenu.tres" type="Theme" id=1]
+[ext_resource path="res://UI/Settings/Settings.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.227451, 0.227451, 0.227451, 1 )
+
+[node name="MusicLabel" type="Label" parent="ColorRect"]
+margin_left = 136.0
+margin_top = 178.0
+margin_right = 516.0
+margin_bottom = 294.0
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+text = "Music:"
+align = 1
+
+[node name="HSlider" type="HSlider" parent="ColorRect"]
+margin_left = 493.0
+margin_top = 203.0
+margin_right = 1846.0
+margin_bottom = 263.0
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+value = 70.0
+
+[node name="SpaceLabel" type="Label" parent="ColorRect"]
+margin_left = 25.0
+margin_top = 533.0
+margin_right = 25.0
+margin_bottom = 547.0
+size_flags_horizontal = 0
+
+[node name="BackButton" type="Button" parent="ColorRect"]
+margin_left = 39.0
+margin_top = 27.0
+margin_right = 279.0
+margin_bottom = 132.0
+theme = ExtResource( 1 )
+text = "Go Back"
+
+[connection signal="mouse_exited" from="ColorRect/HSlider" to="." method="_on_HSlider_mouse_exited"]
+[connection signal="value_changed" from="ColorRect/HSlider" to="." method="_on_HSlider_value_changed"]
+[connection signal="pressed" from="ColorRect/BackButton" to="." method="_on_BackButton_pressed"]

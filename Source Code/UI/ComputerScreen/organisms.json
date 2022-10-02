@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Methicillin-resistant Staphylococcus aureus",
+    "desc": "Resistant to foreign organisms",
+    "img": "MRSA.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Koala",
+    "desc": "Sleep up to 20 hours per day",
+    "img": "coala.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Bullfrog",
+    "desc": "Can live without sleep for a long time",
+    "img": "frog.PNG",
+    "price": "25"
+  },
+  {
+    "name": "Mice",
+    "desc": "Resistance to microgravity in space. Hyperactivity leads to high blood pressure. It may cause stroke and heart attack.",
+    "img": "mice.png",
+    "price": "20"
+  },
+  {
+    "name": "Lugworms",
+    "desc": "Less need for oxygen. Due to microgravity can\u2019t eat",
+    "img": "worm.PNG",
+    "price": "20"
+  },
+  {
+    "name": "C. neoformans var. gattii",
+    "desc": "Resistance to oxidative stress as it has SOD genes",
+    "img": "gattii.png",
+    "price": "35"
+  },
+  {
+    "name": "American pygmy shrew",
+    "desc": "High need for food",
+    "img": "shrew.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Turkey",
+    "desc": "Need for the specific environment",
+    "img": "turkey.PNG",
+    "price": "30"
+  },
+  {
+    "name": "Goose",
+    "desc": "Need for the specific environment",
+    "img": "Goose.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Whales",
+    "desc": "Too heavy",
+    "img": "whale.PNG",
+    "price": "50"
+  },
+  {
+    "name": "S. cerevisiae",
+    "desc": "Resistance to oxidative stress as it has 2 SOD genes",
+    "img": "cerevisiae.PNG",
+    "price": "15"
+  },
+  {
+    "name": "C. albicans",
+    "desc": "Resistance to oxidative stress as it has 6 SOD genes",
+    "img": "albicans.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Henneguya salminicola (parasite)",
+    "desc": "No need for oxygen",
+    "img": "Henneguya salminicola.PNG",
+    "price": "20"
+  },
+  {
+    "name": "Fly larvae",
+    "desc": "Resistance to hypergravity during the launching and landing of the spacecraft",
+    "img": "larvae.png",
+    "price": "15"
+  },
+  {
+    "name": "Rabbit",
+    "desc": "It has no special features",
+    "img": "rabbit.PNG",
+    "price": "50"
+  },
+  {
+    "name": "Crocodile",
+    "desc": "Need for the specific environment",
+    "img": "crocodile.PNG",
+    "price": "20"
+  },
+  {
+    "name": "Deinococcus radiodurans (bacterium)",
+    "desc": "Resistance to radiation",
+    "img": "Deinococcus radiodurans.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Tardigrade",
+    "desc": "Can live without food for a long time during cryptobiosis.",
+    "img": "tardigrade.PNG",
+    "price": "20"
+  },
+  {
+    "name": "A. fumigatus",
+    "desc": "Resistance to oxidative stress as it has 2 SOD genes",
+    "img": "fumigatus.PNG",
+    "price": "15"
+  },
+  {
+    "name": "Elephant",
+    "desc": "Sleep 2 hours per day. Too heavy",
+    "img": "elephant.PNG",
+    "price": "40"
+  }
+]

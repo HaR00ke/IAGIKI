@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lina slowed.mp3-eb1a15ebdb4f3dc23e72bd7550336547.mp3str"
+
+[deps]
+
+source_file="res://Autoload/BackgroundMusic/lina slowed.mp3"
+dest_files=[ "res://.import/lina slowed.mp3-eb1a15ebdb4f3dc23e72bd7550336547.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

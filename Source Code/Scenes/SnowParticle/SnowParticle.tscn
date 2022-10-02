@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.374027, 0.851617, 0.977051, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+max_value = 5.0
+_data = [ Vector2( 0.150838, 0.511364 ), 0.0, -3.35027, 0, 0, Vector2( 0.379888, 3.55682 ), 33.3591, 33.3591, 0, 0, Vector2( 0.519553, 5 ), 0.0, 0.0, 0, 0, Vector2( 0.681564, 0.375 ), -29.2038, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 1500, 0 )
+initial_velocity = 1000.0
+initial_velocity_random = 0.56
+angular_velocity = 242.38
+angular_velocity_random = 1.0
+orbit_velocity = 1.0
+orbit_velocity_random = 1.0
+linear_accel = 100.0
+radial_accel = 49.26
+tangential_accel = 96.16
+tangential_accel_random = 1.0
+angle_random = 1.0
+scale = 5.0
+scale_curve = SubResource( 4 )
+color = Color( 39.88, 37.79, 38.73, 1 )
+color_initial_ramp = SubResource( 2 )
+
+[node name="SnowParticle" type="Particles2D"]
+amount = 40
+lifetime = 3.0
+preprocess = 55.05
+process_material = SubResource( 5 )
