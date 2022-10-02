@@ -14,7 +14,7 @@ func _ready():
 func show_label(text):
 	player.play("show")
 	label.text = text
-	yield(get_tree().create_timer(len(text.split(' ')) / 3), "timeout")
+	yield(get_tree().create_timer(len(text.split(' ')) / 2), "timeout")
 	hide_label()
 	
 

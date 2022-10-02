@@ -965,7 +965,6 @@ modulate = Color( 0.0509804, 0.145098, 0.658824, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
 position = Vector2( -11, -38.0625 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 shape = SubResource( 36 )
 
 [node name="LabTrigger" type="Area2D" parent="Triggers"]

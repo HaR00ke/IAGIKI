@@ -36,10 +36,10 @@ func show_hints():
 	HintLabel.show_label("Hi! Help me choose organisms that have stress resistance. Some organisms worsen the condition, which leads to death on board.")
 	yield(HintLabel, "end_of_hint")
 	yield(get_tree().create_timer(0.5), "timeout")
-	HintLabel.show_label("To learn the traits of organisms you can do research in the library, which will take a lot of time! And you can also exchange the XP given for the flight for examination in the laboratory. ")
+	HintLabel.show_label("To learn the traits of organisms you can do research in the library, which will take a lot of time! And you can also exchange points given for the flight for examination in the laboratory. ")
 	yield(HintLabel, "end_of_hint")
 	yield(get_tree().create_timer(0.5), "timeout")
-	HintLabel.show_label("Points is given depending on the percentage of completion of a full flight. Go to the lab to change my DNA!")
+	HintLabel.show_label("Points are given depending on the percentage of completion of a full flight. Go to the research room to change my DNA!")
 	
 	
 func _on_tablet_close():
